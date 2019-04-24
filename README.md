@@ -1,6 +1,9 @@
 # Embed
 Tool used to create object files and header files of resources so they can be embedded in C executables. I use this in my Makefiles.
 
+## Compilation  
+Do `make RELEASE=1` to compile. You can `make install RELEASE=1` to install to `/usr/local/bin` if you want.  
+
 ## Usage:  
 
 	embed [-h] <input>  
@@ -9,3 +12,4 @@ Tool used to create object files and header files of resources so they can be em
 
 ## Return
 Outputs the C `unsigned char` array (with C syntax) of of the resource file to standard output. If `-h` option is given, header file is output instead. This extern variable also contains the size of the array so `sizeof(identifier)` works.  
+
